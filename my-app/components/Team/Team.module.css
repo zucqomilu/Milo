@@ -1,0 +1,64 @@
+.Team h2 {
+    margin-bottom: 20px;
+    font-size: 2.369rem;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+}
+
+.ColumnGrid {
+    width: 100%;
+    margin-top: 40px;
+    flex: 1 1 0%;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.CardIcon {
+    border-radius: 50%;
+}
+
+.Card h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 1.777rem;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.Label {
+    margin-bottom: 12px;
+    color: hsla(0, 0.00%, 13.33%, 1.00);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.SocialLink {
+    padding: 4px;
+    flex: 0 0 auto;
+    color: hsla(0, 0.00%, 13.33%, 1.00);
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.SocialLink a {
+    display: flex;
+    align-items: center;
+}
+
+.SocialLink a:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}

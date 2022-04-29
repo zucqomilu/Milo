@@ -1,0 +1,96 @@
+.Faq {
+    text-align: center;
+    padding: 25px;
+}
+
+.Faq h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.369rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: hsla(272.08556149732624, 84.62%, 56.67%, 1.00);
+}
+
+.Faq p {
+    font-size: 1rem;
+}
+
+.GridContainer {
+    display: grid;
+    grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+.FaqDropdown {
+    margin-bottom: 12px;
+    overflow: hidden;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(272.08556149732624, 84.62%, 56.67%, 1.00);
+    border-radius: 10px;
+    color: hsla(0, 0.00%, 13.33%, 1.00);
+
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 900;
+}
+
+.DropdownToggle {
+    position: relative;
+    vertical-align: top;
+    text-decoration: none;
+    color: #222222;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    min-height: 72px;
+    padding: 12px 60px 12px 30px;
+    white-space: normal;
+}
+
+.DropdownIcon {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-right: 20px;
+    width: 2em;
+    height: 2em;
+}
+
+.DropdownToggle h4 {
+    font-size: 1em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.DropdownList {
+      padding-right: 20px;
+      padding-left: 20px;
+      padding: 0px 30px 12px;
+}
+
+.DropdownList p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 0.75rem;
+}

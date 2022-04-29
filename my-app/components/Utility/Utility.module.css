@@ -1,0 +1,56 @@
+.Utility {
+    text-align: center;
+    padding: 25px;
+}
+
+.Utility h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.369rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.ColumnGrid {
+    display: grid;
+    width: 100%;
+    margin-top: 40px;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 40px 20px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.Card {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #faf5fe;
+    text-align: center;
+}
+
+.CardIcon {
+    max-height: 300px;
+    max-width: 300px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+}
+
+.Card h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 1.777rem;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.Card p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 0.75rem;
+    max-width: 35ch;
+}
