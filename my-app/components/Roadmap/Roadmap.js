@@ -4,7 +4,6 @@ import leo1 from '../../public/LeoNFT_1.png';
 import leo2 from '../../public/LeoNFT2.png';
 import leo3 from '../../public/LeoNFT3.png';
 import leo4 from '../../public/LeoNFT4.png';
-import Image from 'next/image';
 import RoadmapStepWrap from './RoadmapStepWrap';
 
 const Roadmap = () => {

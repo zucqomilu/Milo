@@ -8,8 +8,8 @@
 }
 
 .Container {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 25px;
+    padding-left: 25px;
     position: relative;
     width: 100%;
     max-width: 1280px;
@@ -29,20 +29,24 @@
 }
 
 .FooterLinksWrap {
+    margin-top: 20px;
     display: grid;
     align-items: start;
-    grid-template-rows: auto;
-    margin-top: 20px;
     grid-auto-flow: row;
     grid-auto-columns: auto;
     gap: 40px;
     grid-template-columns: 1fr 50%;
+    grid-template-columns: auto;
 }
 
 .FooterColumn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.FooterColumn.Node {
+    grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
 .FooterColumn h6 {
@@ -53,7 +57,7 @@
     font-weight: 500;
 }
 
-.FooterColumn a {
+.FooterLink {
     background-color: transparent;
     transition-property: all;
     transition-duration: 200ms;
@@ -64,14 +68,9 @@
     padding: 4px;
 }
 
-.Node {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
 .SocialLinksWrap {
     display: grid;
-    align-items: conter;
+    align-items: center;
     grid-auto-columns: auto;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -79,12 +78,34 @@
     justify-content: center;
     margin-right: 0px;
     margin-left: 0px;
-    row-gap: 4px;
+    gap: 16px;
+    row-gap: 6px;
     grid-auto-flow: column;
+    margin-top: 12px;
 }
 
-.SocialLinksWrap a {
-    padding-right: 20px;
+@media screen and (min-width: 478px) {
+    .FooterWrap {
+        text-align: start;
+    }
+
+    .FooterLinksWrap {
+        grid-auto-flow: column;
+        grid-auto-columns: auto;
+        gap: 60px;
+        grid-template-columns: auto;
+    }
+
+    .SocialLinksWrap {
+        grid-auto-flow: row;
+    }
+}
+
+.SocialLink {
+    padding: 4px;
+    color: hsla(0, 0.00%, 13.33%, 1.00);
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .SocialLinksWrap a:hover {

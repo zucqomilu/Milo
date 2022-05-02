@@ -1,9 +1,39 @@
 .Faq {
-    text-align: center;
-    padding: 25px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
 }
 
-.Faq h2 {
+.Container {
+    padding-right: 25px;
+    padding-left: 25px;
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.TwoColumnGrid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+}
+
+.Node {
+    grid-area: span 1 / span 2 / span 1 / span 2;
+    align-self: start;
+}
+
+.ContentBox {
+    width: 100%;
+    text-align: center;
+}
+
+.Node h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 2.369rem;
@@ -12,17 +42,14 @@
     color: hsla(272.08556149732624, 84.62%, 56.67%, 1.00);
 }
 
-.Faq p {
+.Node.ContentBox p {
     font-size: 1rem;
-}
-
-.GridContainer {
-    display: grid;
-    grid-area: span 1 / span 2 / span 1 / span 2;
+    margin-bottom: 30px;
+    max-width: 50ch;
 }
 
 .FaqDropdown {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     overflow: hidden;
     width: 100%;
     border-style: solid;
@@ -84,13 +111,30 @@
 }
 
 .DropdownList {
-      padding-right: 20px;
-      padding-left: 20px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: transparent;
+    min-width: 100%;
+}
+
+.DropdownListWrap {
       padding: 0px 30px 12px;
 }
 
-.DropdownList p {
+.DropdownListWrap p {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 0.75rem;
+}
+
+@media screen and (min-width: 478px) {
+    .Faq {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .Node.ContentBox {
+        text-align: start;
+    }
 }

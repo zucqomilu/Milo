@@ -1,6 +1,18 @@
 .Utility {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
     text-align: center;
-    padding: 25px;
+}
+
+.Container {
+    padding-right: 25px;
+    padding-left: 25px;
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .Utility h2 {
@@ -34,9 +46,6 @@
 }
 
 .CardIcon {
-    max-height: 300px;
-    max-width: 300px;
-    flex: 0 0 auto;
     border-radius: 50%;
 }
 

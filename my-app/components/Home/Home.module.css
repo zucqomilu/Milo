@@ -1,33 +1,69 @@
-.icon {
-    padding-right: 0.6rem;
-    padding-left: 0.6rem;
-    color: #000;
+.Home {
+    padding-top:60px;
+    padding-bottom: 0px;
 }
 
-.Home {
+.Container {
+    padding-right: 25px;
+    padding-left: 25px;
+    position: relative;
+    width: 100%;
     max-width: 1024px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.HomeWrap {
+    display: flex;
+    row-gap: 0px;
+    width: 100%;
+    height: 100%;
+    align-content: center;
     justify-content: space-between;
-    padding: 25px;
-    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.HomeContentWrap {
+    max-width: 100%;
+    margin-bottom: 60px;
+    padding-right: 0px;
+    width: 100%;
+}
+
+.HomeImageWrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    opacity: 1;
 }
 
 .Home h1 {
-    padding-top: 85px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     font-size: 3.157rem;
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: -1px;
     color: rgb(0, 171, 226);
+    margin: 0.67em 0;
 }
 
 .Home p {
+    max-width: 50ch;
     padding-bottom: 30px;
     font-size: 1rem;
+    margin-top: 0;
 }
 
 .NewsletterContainer {
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .NewsletterContainer h6 {
@@ -86,17 +122,17 @@
 }
 
 .Button {
-    display: block;
-    width: 100%;
     padding: 16px 32px;
     border-width: 1px;
     border-color: rgb(0, 171, 226);
     box-shadow: none;
-    transition-property: all;
-    transition-duration: 200ms;
-    transition-timing-function: ease;
     font-weight: 600;
     text-align: center;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
     border-style: none;
     border-radius: 8px;
     background-color: rgb(0, 171, 226);
@@ -125,14 +161,22 @@
     background: orange;
 }
 
-@media (min-width: 990px) {
-    .Home {
-        display: flex;
-        flex-direction: row-reverse;
-        text-align: Left;
+.HomeImage {
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 478px) {
+    .heroWrap {
+        flex-direction: column;
     }
 
-    .Home h1 {
-        padding-top: 80px;
+    .Button {
+        max-width: 200px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .heroWrap {
+        align-items: flex-start;
     }
 }

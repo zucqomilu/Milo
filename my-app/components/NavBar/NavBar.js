@@ -1,15 +1,18 @@
-import classes from './NavBar.module.css';
-
+import css from './NavBar.module.css';
 import Navigation from './Navigation';
 import MobileNavigation from './MobileNavigation';
 import NavLogo from './NavLogo';
 
 const NavBar = () => {
   return (
-    <div className={classes.NavBar}>
-      <NavLogo />
-      <Navigation />
-      <MobileNavigation />
+    <div className={css.NavBar}>
+      <div className={css.Container}>
+        <div className={css.NavBarWrapper}>
+          <NavLogo />
+          <Navigation />
+          <MobileNavigation />
+        </div>
+      </div>
     </div>
   );
 };

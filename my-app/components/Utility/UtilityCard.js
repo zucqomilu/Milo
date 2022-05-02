@@ -4,7 +4,11 @@ import Image from 'next/image';
 const UtilityCard = ({ img, header, text }) => {
   return (
       <div className={classes.Card}>
-        <Image className={classes.CardIcon} src={img} alt="" />
+        <Image className={classes.CardIcon}
+               width={300}
+               height={300}
+               src={img}
+               alt="" />
         <h3>{header}</h3>
         <p>{text}</p>
       </div>

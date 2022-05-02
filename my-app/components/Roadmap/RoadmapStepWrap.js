@@ -13,7 +13,11 @@ const RoadmapStepWrap = ({ img, percent, text, isCompleted }) => {
 
     return (
         <div className={css.RadmapStepWrap}>
-          <Image src={img} alt='' />
+          <Image className={css.RoadmapImage}
+                 height={158}
+                 width={158}
+                 src={img}
+                 alt='' />
           <div className={css.RoadmapContentWrap}>
             <div className={css.RoadmapStepHeadingWrap}>
               <h3>{percent} Sales</h3>

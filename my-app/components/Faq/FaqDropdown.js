@@ -11,7 +11,9 @@ const FaqDropdown = ({ question, awnser }) => {
           <h4>{question}</h4>
         </div>
         <div className={classes.DropdownList}>
-          <p>{awnser}</p>
+          <div className={classes.DropdownListWrap}>
+            <p>{awnser}</p>
+          </div>
         </div>
       </div>
   );
