@@ -1,12 +1,10 @@
-import classes from './NavBar.module.css';
+import css from './NavBar.module.css';
 import NavLinks from './NavLinks';
-import NavSocialMediaLinks from './NavSocialMediaLinks';
 
 const Navigation = () => {
   return (
-    <nav className={classes.Navigation}>
+    <nav className={css.Navigation}>
       <NavLinks />
-      <NavSocialMediaLinks />
     </nav>
   );
 };

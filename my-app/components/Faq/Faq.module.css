@@ -138,3 +138,20 @@
         text-align: start;
     }
 }
+
+@media screen and (min-width: 767px) {
+    .TwoColumnGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .TwoColumnGrid {
+        gap: 60px;
+        align-items: stretch;
+    }
+
+    .Node {
+        grid-area: auto / auto / auto / auto;
+    }
+}

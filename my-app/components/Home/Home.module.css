@@ -25,9 +25,7 @@
 }
 
 .HomeContentWrap {
-    max-width: 100%;
     margin-bottom: 60px;
-    padding-right: 0px;
     width: 100%;
 }
 
@@ -35,14 +33,12 @@
     position: relative;
     display: flex;
     width: 100%;
-    max-width: 100%;
     justify-content: center;
     align-items: center;
     flex: 0 0 auto;
-    opacity: 1;
 }
 
-.Home h1 {
+.HomeContentWrap h1 {
     margin-top: 0px;
     margin-bottom: 20px;
     font-size: 3.157rem;
@@ -50,14 +46,13 @@
     font-weight: 500;
     letter-spacing: -1px;
     color: rgb(0, 171, 226);
-    margin: 0.67em 0;
 }
 
-.Home p {
+.HomeContentWrap p {
     max-width: 50ch;
     padding-bottom: 30px;
     font-size: 1rem;
-    margin-top: 0;
+    margin: 0px;
 }
 
 .NewsletterContainer {
@@ -166,8 +161,8 @@
 }
 
 @media screen and (min-width: 478px) {
-    .heroWrap {
-        flex-direction: column;
+    .Home {
+        padding-top: 120px;
     }
 
     .Button {
@@ -176,7 +171,18 @@
 }
 
 @media screen and (min-width: 767px) {
-    .heroWrap {
+    .HomeWrap {
         align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .HomeContentWrap {
+        max-width: 50%;
+        padding-right: 60px;
+        margin-bottom: 0px;
+    }
+
+    .HomeImageWrap {
+        max-width: 50%;
     }
 }

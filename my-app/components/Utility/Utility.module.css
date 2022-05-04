@@ -1,7 +1,7 @@
 .Utility {
     width: 100%;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
 }
 
@@ -29,8 +29,6 @@
     margin-top: 40px;
     grid-auto-columns: 1fr;
     grid-template-rows: auto;
-    gap: 40px 20px;
-    grid-template-columns: 1fr;
     row-gap: 20px;
 }
 
@@ -62,4 +60,25 @@
     margin-bottom: 20px;
     font-size: 0.75rem;
     max-width: 35ch;
+}
+
+@media screen and (min-width: 478px) {
+    .Utility {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .ColumnGrid {
+        gap: 40px 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .ColumnGrid {
+        gap: 60px 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

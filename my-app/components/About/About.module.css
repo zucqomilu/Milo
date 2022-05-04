@@ -1,6 +1,4 @@
 .Container {
-    padding-right: 25px;
-    padding-left: 25px;
     position: relative;
     width: 100%;
     max-width: 1280px;
@@ -9,14 +7,32 @@
 }
 
 .BlackBox {
-    padding: 40px;
+    padding: 60px 25px;
     width: 100%;
-    border-radius: 20px;
     background-color: hsla(0, 0.00%, 13.33%, 1.00);
     color: hsla(0, 0.00%, 100.00%, 1.00);
 }
 
-.BlackBox h3 {
+.BlackBoxContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ImageContainer {
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.BlackBoxContent {
+    width: 100%;
+    max-width: 100%;
+}
+
+.BlackBoxContent h3 {
+    margin-top: 0px;
     margin-bottom: 16px;
     font-size: 1.777rem;
     line-height: 1.2;
@@ -24,8 +40,37 @@
     text-align: center;
 }
 
-.BlackBox p {
+.BlackBoxContent p {
     margin-bottom: 20px;
     font-size: 1rem;
     text-align: center;
+}
+
+@media screen and (min-width: 478px) {
+    .Container {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .BlackBox {
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .BlackBox {
+        padding: 60px;
+    }
+
+    .BlackBoxContainer {
+        flex-direction: row;
+    }
+
+    .BlackBoxContent {
+        max-width: 45%;
+    }
+
+    .ImageContainer {
+        max-width: 45%;
+    }
 }

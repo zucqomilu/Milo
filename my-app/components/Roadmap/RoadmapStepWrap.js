@@ -1,32 +1,32 @@
 import css from './Roadmap.module.css';
 import Image from 'next/image';
+import PropTypes from 'prop-types';
 
-const RoadmapStepWrap = ({ img, percent, text, isCompleted }) => {
-    
-    const completed = <div className={css.AnnounceLabel + ' ' + css.Completed}>
-                       completed
-                     </div>;
-
-    const comingSoon = <div className={css.AnnounceLabel}>
-                         coming soon
-                       </div>;
-
+const RoadmapStepWrap = ({ img, percent, text, isLeft, isCompleted }) => {
     return (
-        <div className={css.RadmapStepWrap}>
-          <Image className={css.RoadmapImage}
-                 height={158}
-                 width={158}
-                 src={img}
-                 alt='' />
+        <div className={`${css.RoadmapStepWrap} ${isLeft ? css.Left : ''}`}>
+          <div className={`${css.ImageWrapper} ${isLeft ? css.Left : css.Right}`}>
+            <Image className={css.RoadmapImage} src={img} alt='' />
+          </div>
           <div className={css.RoadmapContentWrap}>
-            <div className={css.RoadmapStepHeadingWrap}>
+            <div className={`${css.RoadmapStepHeadingWrap} ${isLeft ? css.Left : ''}`}>
               <h3>{percent} Sales</h3>
-              {isCompleted === 'true' ? completed : comingSoon}
+              <div className={`${css.AnnounceLabel} ${isCompleted ? css.Completed : ''}`}>
+                {isCompleted ? 'completed' : 'coming soon'}
+              </div>
             </div>
             <p>{text}</p>
           </div>
         </div>
     );
+};
+
+RoadmapStepWrap.propTypes = {
+    img: PropTypes.any,
+    percent: PropTypes.string,
+    text: PropTypes.string,
+    isCompleted: PropTypes.bool,
+    isLeft: PropTypes.bool
 };
 
 export default RoadmapStepWrap;

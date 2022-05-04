@@ -6,7 +6,7 @@ const GetNft = () => {
           <div className={css.Container}>
             <div className={css.TwoColumnGrid}>
               <h2>Join the Milo club!</h2>
-              <a className={css.Button} href="">Get Your Milo</a>
+              <a className={css.Button} href="">Get Your Crypto Hand</a>
             </div>
           </div>
         </div>

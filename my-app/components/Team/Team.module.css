@@ -1,3 +1,15 @@
+.Team {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .Team h2 {
     margin-bottom: 20px;
     font-size: 2.369rem;
@@ -7,13 +19,13 @@
 }
 
 .ColumnGrid {
+    display: grid;
     width: 100%;
     margin-top: 40px;
     flex: 1 1 0%;
     grid-auto-columns: 1fr;
     grid-template-rows: auto;
-    display: grid;
-    row-gap: 20px;
+    gap: 20px 20px;
     grid-template-columns: 1fr;
 }
 
@@ -61,4 +73,21 @@
 .SocialLink a:hover {
     transition: all .2s ease-in-out;
     transform: scale(1.2);
+}
+
+@media screen and (min-width: 478px) {
+    .Team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .ColumnGrid {
+        row-gap: 40px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .ColumnGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

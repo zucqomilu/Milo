@@ -35,25 +35,48 @@
 }
 
 .Button {
-    display: block;
-    width: 100%;
+    display: inline-block;
     padding: 16px 32px;
     border-width: 1px;
     border-color: rgb(0, 171, 226);
     box-shadow: none;
-    transition-property: all;
-    transition-duration: 200ms;
-    transition-timing-function: ease;
     font-weight: 600;
     text-align: center;
+
+    width: 100%;
     border-style: none;
     border-radius: 8px;
     background-color: rgb(0, 171, 226);
-    filter: brightness(100%);
     outline: transparent solid 3px;
-    outline-offset: 0px;
     color: white;
-    mix-blend-mode: normal;
+
     grid-area: span 1 / span 2 / span 1 / span 2;
-    justify-self: stretch;
+    place-self: center end;
+}
+
+@media screen and (min-width: 767px) {
+    .TwoColumnGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .TwoColumnGrid h2 {
+        grid-area: auto / auto / auto / auto;
+        text-align: left;
+    }
+
+    .Button {
+        grid-area: auto / auto / auto / auto;
+        justify-self: end;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .Button {
+        border-color: rgb(0, 171, 226);
+        color: rgb(0, 171, 226);
+        background-color: #faf5fe;
+        border-radius: 50px;
+        border-style: solid;
+    }
 }
