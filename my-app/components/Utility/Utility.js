@@ -6,7 +6,7 @@ import UtilityCard from './UtilityCard';
 
 const Utility = () => {
   return (
-    <div className={css.Utility}>
+    <div className={css.Utility} id='utility'>
       <div className={css.Container}>
         <h2>Why Milo?</h2>
         <div className={css.ColumnGrid}>

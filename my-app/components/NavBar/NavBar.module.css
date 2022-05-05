@@ -33,20 +33,27 @@
 
 .NavLinks {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    margin-top: 250px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .NavLink {
-    display: inline-block;
-    margin: 20px;
+    margin: 10px;
     color: hsla(0, 0.00%, 13.33%, 1.00);
     font-size: 0.8rem;
     font-weight: 400;
-    position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid transparent
 }
 
-.NavLink:hover {
-    border-bottom: 1px solid black;
+.NavLink a:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
 }
 
 .SocialMediaLinks {
@@ -67,7 +74,7 @@
     color: hsla(0, 0.00%, 13.33%, 1.00);
     font-weight: 500;
     text-decoration: none;
-    height: 28px;
+    height: 29px;
 }
 
 .SocialMediaLinks a:hover {
@@ -98,5 +105,27 @@
 
     .Navigation {
         display: flex;
+    }
+
+    .NavLinks {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 0px;
+        border-bottom: none;
+    }
+
+    .NavLink {
+        display: inline-block;
+        margin: 20px;
+        color: hsla(0, 0.00%, 13.33%, 1.00);
+        font-size: 0.8rem;
+        font-weight: 400;
+        position: relative;
+        border-bottom: 1px solid transparent;
+    }
+
+    .NavLink:hover {
+        border-bottom: 1px solid black;
     }
 }

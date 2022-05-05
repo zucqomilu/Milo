@@ -8,7 +8,7 @@ import TeamCard from './TeamCard';
 
 const Team = () => {
   return (
-    <div className={classes.Team}>
+    <div className={classes.Team} id='team'>
       <div className={classes.Container}>
         <h2>Milo Team</h2>
         <div className={classes.ColumnGrid}>
