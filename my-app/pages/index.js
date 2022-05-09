@@ -1,4 +1,5 @@
 import NavBar from '../components/NavBar/NavBar';
+import NetworkAlert from '../components/NetworkAlert/NetworkAlert';
 import Homes from '../components/Home/Home';
 import Utility from '../components/Utility/Utility';
 import About from '../components/About/About';
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <div>
       <NavBar />
+      <NetworkAlert />
       <Homes />
       <Utility />
       <About />
