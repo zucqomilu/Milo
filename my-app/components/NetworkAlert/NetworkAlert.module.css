@@ -1,6 +1,6 @@
 .NetworkAlert {
     position: sticky;
-    inset: 86px 0% auto;
+    inset: 82px 0% auto;
     z-index: 1000;
 
     background: rgb(242, 153, 74) none repeat scroll 0% 0%;
@@ -23,4 +23,10 @@
     height: 24px;
     cursor: pointer;
     margin-left: 20px;
+}
+
+@media (min-width: 991px) {
+    .NetworkAlert {
+        insert: 86px 0% auto;
+    }
 }
