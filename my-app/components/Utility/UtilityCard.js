@@ -1,8 +1,7 @@
 import classes from './Utility.module.css';
 import Image from 'next/image';
 
-const UtilityCard = ({ img, header, text }) => {
-  return (
+const UtilityCard = ({ img, header, text }) =>
       <div className={classes.Card}>
         <Image className={classes.CardIcon}
                width={300}
@@ -11,8 +10,6 @@ const UtilityCard = ({ img, header, text }) => {
                alt="" />
         <h3>{header}</h3>
         <p>{text}</p>
-      </div>
-  );
-};
+      </div>;
 
 export default UtilityCard;

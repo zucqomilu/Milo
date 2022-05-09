@@ -2,8 +2,7 @@ import css from './About.module.css';
 import nyalog from '../../public/nyalog.png';
 import Image from 'next/image';
 
-const About = () => {
-    return (
+const About = () =>
       <div className={css.About} id='about'>
         <div className={css.Container}>
           <div className={css.BlackBox}>
@@ -18,8 +17,6 @@ const About = () => {
             </div>   
           </div>
         </div>
-      </div>
-    );
-};
+      </div>;
 
 export default About;

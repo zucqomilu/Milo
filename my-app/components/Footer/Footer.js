@@ -2,8 +2,7 @@ import css from './Footer.module.css';
 import { FaTwitter, FaDiscord, FaTelegram, FaYoutube } from 'react-icons/fa';
 import { CgPlayButton } from 'react-icons/cg';
 
-const Footer = () => {
-  return (
+const Footer = () =>
       <div className={css.Footer}>
         <div className={css.Container}>
           <div className={css.FooterWrap}>
@@ -53,8 +52,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
-  );
-};
+      </div>;
 
 export default Footer;

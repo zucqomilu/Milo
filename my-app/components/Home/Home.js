@@ -2,8 +2,7 @@ import css from './Home.module.css';
 import img from '../../public/milo.gif';
 import Image from 'next/image';
 
-const Home = () => {
-  return (
+const Home = () =>
     <div className={css.Home}>
       <div className={css.Container}>
         <div className={css.HomeWrap}>
@@ -26,8 +25,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+    </div>;
 
 export default Home;

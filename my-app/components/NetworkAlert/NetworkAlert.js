@@ -27,12 +27,8 @@ const NetworkAlert = () => {
         const { ethereum, location } = window;
 
         if (ethereum) {
-            ethereum.on("chainChanged", () => {
-                location.reload();
-            });
-            ethereum.on("accountsChanged", () => {
-                location.reload();
-            });
+            ethereum.on("chainChanged", () => location.reload());
+            ethereum.on("accountsChanged", () => location.reload());
         }
         
         checkRinkebyNetworkConnected();

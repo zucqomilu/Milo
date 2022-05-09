@@ -3,8 +3,7 @@ import NavSocialMediaLinks from './NavSocialMediaLinks.js';
 import PropTypes from 'prop-types';
 import NavLink from './NavLink';
 
-const NavLinks = ({ isMobile, closeMobileMenu }) => {
-    return (
+const NavLinks = ({ isMobile, closeMobileMenu }) =>
       <div className={css.NavLinks}>
         <NavLink isMobile={isMobile}
                  closeMobileMenu={closeMobileMenu}
@@ -23,9 +22,7 @@ const NavLinks = ({ isMobile, closeMobileMenu }) => {
                  href='/#faq'
                  text='FAQ' />
         {isMobile || <NavSocialMediaLinks />}
-      </div>        
-    );
-};
+      </div>;
 
 NavLinks.propTypes = {
     isMobile: PropTypes.bool,

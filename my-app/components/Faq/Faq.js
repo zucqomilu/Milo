@@ -1,7 +1,6 @@
 import css from './Faq.module.css';
 import FaqDropdown from './FaqDropdown';
 
-
 const Faq = () => {
 
     const loremShort = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.';

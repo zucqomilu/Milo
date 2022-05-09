@@ -3,8 +3,7 @@ import Navigation from './Navigation';
 import MobileNavigation from './MobileNavigation';
 import NavLogo from './NavLogo';
 
-const NavBar = () => {
-  return (
+const NavBar = () =>
     <div className={css.NavBar}>
       <div className={css.Container}>
         <div className={css.NavBarWrapper}>
@@ -13,8 +12,6 @@ const NavBar = () => {
           <MobileNavigation />
         </div>
       </div>
-    </div>
-  );
-};
+    </div>;
 
 export default NavBar;

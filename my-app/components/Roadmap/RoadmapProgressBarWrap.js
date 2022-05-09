@@ -1,13 +1,10 @@
 import css from './Roadmap.module.css';
 
-const RoadmapProgressBarWrap = () => {
-    return (
+const RoadmapProgressBarWrap = () =>
       <div className={css.RoadmapProgressBarWrap}>
         <div className={css.Circle} />
         <div className={css.ProgressBar} />
         <div className={css.Circle} />
-      </div>
-    );
-};
+      </div>;
 
 export default RoadmapProgressBarWrap;
