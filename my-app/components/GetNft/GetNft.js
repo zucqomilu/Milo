@@ -62,17 +62,8 @@ const GetNft = () => {
                 const signer = provider.getSigner();
                 const nftContract = new ethers.Contract(NFT_CONTRACT_ADDRESS, NFT_CONTRACT_ABI, signer);
                 
-                const transactionParameters = {
-                    to: NFT_CONTRACT_ADDRESS,
-                    from: ethereum.selectedAddress,
-                    data: await nftContract.mintNFTs(1, { value: ethers.utils.parseEther('0.01') }),
-                };
-                
                 setTransactionStatus("Initialize payment");
-                //const nftTxn = await nftContract.mintNFTs(1, { value: ethers.utils.parseEther('0.01') });
-                const nftTxn = await ethereum.request({
-                    method: 'eth_sendTransaction',
-                    params: [transactionParameters], });
+                const nftTxn = await nftContract.mintNFTs(1, { value: ethers.utils.parseEther('0.01') });
 
                 setTransactionStatus("Mining... please wait");
                 await nftTxn.wait();
