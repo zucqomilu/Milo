@@ -27,6 +27,6 @@
 
 @media (min-width: 991px) {
     .NetworkAlert {
-        insert: 86px 0% auto;
+        inset: 86px 0% auto;
     }
 }

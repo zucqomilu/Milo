@@ -48,9 +48,6 @@ const GetNft = () => {
         }
     };
 
-    const hexToWei = hex => parseInt(Number(hex), 10);
-    const weiToHex = wei => wei.toString(16);
-
     const mintNftHandler = async () => {
         try {
             const { ethereum } = window;
@@ -63,7 +60,7 @@ const GetNft = () => {
                 const nftContract = new ethers.Contract(NFT_CONTRACT_ADDRESS, NFT_CONTRACT_ABI, signer);
                 
                 setTransactionStatus("Initialize payment");
-                const nftTxn = await nftContract.mintNFTs(1, { value: ethers.utils.parseEther('0.01') });
+                const nftTxn = await nftContract.mintNFTs(1, { value: ethers.utils.parseEther('0.01'), gasLimit: 500000 });
 
                 setTransactionStatus("Mining... please wait");
                 await nftTxn.wait();
